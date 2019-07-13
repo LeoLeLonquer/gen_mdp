@@ -1,0 +1,13 @@
+# VIm files
+
+*.swp
+
+# archive
+
+archive/
+archive/*.zip
+
+# unzipped dico file
+
+dico/
+
