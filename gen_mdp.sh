@@ -2,6 +2,13 @@
 
 set -e
 
+USAGE="Usage : ./gen_mdp.sh [NB_MOTS] [LON_MOT] \n\
+  NB_MOTS: (optionnel) nombre de mots dans le mot de passe\n\
+  LON_MOT: (optionnel) longueur minimale des mots"
+
+[ "$1" = "-h" ] && echo -e "$USAGE" && exit
+[ "$1" = "--help" ] && echo -e "$USAGE" && exit
+
 DICO_FICHIER="./dico/liste_francais.txt"
 
 NB_MOTS=$1
